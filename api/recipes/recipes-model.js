@@ -1,7 +1,7 @@
-require('dotenv').config()
+function getRecipeById(recipe_id) {
+    return Promise.resolve(`amazing recipe with id ${recipe_id}`)
+}
 
-const server = require('../server');
-
-const port = process.env.PORT;
-
-server.listen(port, ()=>console.log(`***Server running on port ${port}***`));
+module.exports = { 
+    getRecipeById 
+};

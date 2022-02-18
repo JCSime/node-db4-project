@@ -1,4 +1,3 @@
-
 exports.up = async function(knex) {
   await knex.schema
   .createTable('recipes', tbl => {
@@ -42,7 +41,7 @@ exports.up = async function(knex) {
   })
 };
 
-exports.down = async function(knex) {
+exports.down = async function (knex) {
   await knex.schema
   .dropTableIfExists('step_ingredients')
   .dropTableIfExists('steps')
